@@ -1,0 +1,68 @@
+.color-button {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.02s;
+}
+
+.color-button:hover {
+  border-width: 4px;
+  border-color: gray;
+  border-radius: 0.375rem; 
+}
+
+.color-button.selected {
+  border-width: 3px;
+  border-color: gray;
+  border-radius: 0.375rem; 
+}
+.clear {
+  background-size: 100%;
+}
+
+.clear:focus {
+  animation: shrink-grow 0.6s ease; 
+}
+
+@keyframes shrink-grow {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 80%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+.undo{
+  background-size: 100%;
+}
+.undo:focus{
+  animation: shrink-grow 0.6s ease;
+}
+.fill{
+  background-size: 100%;
+}
+.fill:focus{
+  animation: shrink-grow 0.6s ease;
+}
+
+.rounded-tl-md {
+  border-top-left-radius: 0.375rem; 
+}
+
+.rounded-tr-md {
+  border-top-right-radius: 0.375rem; 
+}
+
+.rounded-bl-md {
+  border-bottom-left-radius: 0.375rem; 
+}
+
+.rounded-br-md {
+  border-bottom-right-radius: 0.375rem; 
+}
+.grid-cols-13 {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+}
